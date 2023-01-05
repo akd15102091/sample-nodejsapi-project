@@ -12,6 +12,7 @@ app.get("/", (req,res)=>{
 app.post('/process_post', function (req, res) {  
     let response = req.body; 
     console.log("response is : ",response); 
+    console.log("request is :",req);
     res.send(JSON.stringify(response));
  })  
 
